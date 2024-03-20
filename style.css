@@ -1,3 +1,63 @@
-* {
+.dashboard {
+    display: grid;
+    grid-template-columns: 240px 4fr;
+}
+
+.sideNav {
     background-color: pink;
+    height: 100vh;
+
+    display: grid;
+    align-content: start;
+    grid-template-rows: auto auto auto;
+    gap: 40px;
+}
+
+.sideNavLinks {
+    display: grid;
+    grid-auto-rows: 40px;
+    margin: 0;
+}
+
+.topNav {
+    background-color: lightblue;
+}
+
+.topNavFirstRow {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto;
+}
+
+.topNavSecondRow {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto;
+}
+
+.welcomeMessage {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.widgets {
+    background-color: lightgreen;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.projectGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.projectCard {
+    height: 200px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.trendingProfileCard {
+    display: grid;
+    grid-template-columns: auto 1fr;
 }
