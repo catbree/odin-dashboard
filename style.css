@@ -2,6 +2,7 @@ body {
     font-family: Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: rgb(216, 230, 228);
 }
 
 .dashboard {
@@ -10,10 +11,13 @@ body {
 }
 
 .sideNav {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+
     background-color: darkcyan;
     color: white;
-    height: 100vh;
-    padding: 24px;
+    padding: 30px 24px;
 
     display: grid;
     align-content: start;
@@ -77,6 +81,19 @@ body {
     width: 64px;
     border-radius: 100px;
     background-image: linear-gradient(red, orange);
+}
+
+.avatar[person="a"] {
+    background-image: linear-gradient(red, orange);
+}
+.avatar[person="b"] {
+    background-image: linear-gradient(pink, purple);
+}
+.avatar[person="c"] {
+    background-image: linear-gradient(grey, lightblue);
+}
+.avatar[person="d"] {
+    background-image: linear-gradient(green, whitesmoke);
 }
 
 .topNavFirstRow > input[type="search"] {
@@ -146,16 +163,15 @@ body {
 .projectGrid {
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(320px,1fr));
+    grid-template-rows: 1fr;
+    grid-auto-rows: 1fr;
     gap: 40px;
 }
 
 .projectCard {
-    height: 160px;
     display: grid;
     grid-template-rows: auto 1fr auto;
     border-left: salmon 8px solid;
-
-
 }
 
 .widgetBox {
@@ -173,6 +189,7 @@ body {
 
 .projectCard p {
     margin: 0;
+    color: rgb(82, 88, 88);
 }
 
 .buttonGroup {
@@ -184,7 +201,71 @@ body {
     background-color: white;
 }
 
+.widgetsRight {
+    height: 100%;
+}
+
+.announcementGrid {
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 16px;
+}
+
+.announcementItem {
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgb(216, 230, 228);
+}
+
+.announcementItem:last-child {
+    border-bottom: none;
+    padding-bottom: 0px;
+}
+
+.announcementItem p, 
+.announcementItem h3 {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.announcementItem p {
+    color: rgb(82, 88, 88);
+}
+
+.announcementItem h3 {
+    padding-bottom: 4px;
+}
+
+.trendingWidget {
+    margin-top: 40px;
+}
+
+.trendingGrid {
+    display: grid;
+    gap: 8px;
+}
+
 .trendingProfileCard {
     display: grid;
     grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.trendingProfileCard:last-child {
+    margin-bottom: 0px;
+}
+
+.trendingProfileCard p {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.trendingProfileCard p:first-child {
+    font-weight: 800;
+    padding-bottom: 2px;
+}
+
+.trendingProfileCard p:last-child {
+    color: rgb(82, 88, 88);
 }
