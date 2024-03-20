@@ -1,5 +1,7 @@
-html {
+body {
     font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .dashboard {
@@ -8,7 +10,8 @@ html {
 }
 
 .sideNav {
-    background-color: pink;
+    background-color: darkcyan;
+    color: white;
     height: 100vh;
     padding: 24px;
 
@@ -16,6 +19,11 @@ html {
     align-content: start;
     grid-template-rows: auto auto auto;
     gap: 40px;
+}
+
+.logo p {
+    font-weight: 800;
+    font-size: 1.2rem;
 }
 
 .sideNavLinks {
@@ -38,41 +46,142 @@ html {
 }
 
 .topNav {
-    background-color: lightblue;
+    background-color: white;
+    padding: 16px 40px 24px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    box-shadow: 0px 8px 8px -8px rgb(173, 173, 173);
+    border-bottom: rgb(173,173,173);
+
+    position:relative;
+    z-index:2;
 }
 
 .topNavFirstRow {
     display: grid;
-    grid-template-columns: 1fr auto auto auto;
+    grid-template-columns: auto 1fr auto auto auto;
+    gap: 16px;
+    align-items: center;
+}
+
+.avatarSmall {
+    height: 28px;
+    width: 28px;
+    border-radius: 100px;
+    background-image: linear-gradient(red, orange);
+}
+
+.avatarMedium {
+    height: 64px;
+    width: 64px;
+    border-radius: 100px;
+    background-image: linear-gradient(red, orange);
+}
+
+.topNavFirstRow > input[type="search"] {
+    height:28px;
+    border-radius: 28px;
+    background-color: rgb(216, 230, 228);
+    border: none;
+    margin-right: 80px;
+}
+
+.topNavFirstRow > p {
+    font-weight: 800;
 }
 
 .topNavSecondRow {
     display: grid;
     grid-template-columns: 1fr auto auto auto;
+    gap: 16px;
 }
 
 .welcomeMessage {
     display: grid;
     grid-template-columns: auto 1fr;
+
+    align-items: center;
+    gap: 16px;
+}
+
+.welcomeText > p {
+    padding: 4px 0;
+    margin: 0;
+}
+
+.welcomeText > p:nth-child(1) {
+    font-size: 0.9em;
+}
+
+.welcomeText > p:nth-child(2) {
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.primaryButton {
+    background-color: teal;
+    padding: 8px 16px;
+    color: white;
+    border-radius: 100px;
+    border: none;
+    align-self:end;
+    font-weight: 800;
 }
 
 .widgets {
-    background-color: lightgreen;
+    background-color: rgb(216, 230, 228);
 
     display: grid;
     grid-template-columns: 3fr 1fr;
+    gap: 40px;
+
+    padding: 16px 40px 24px 40px;
+}
+
+.widgets h2 {
+    font-size: 1.2rem;
 }
 
 .projectGrid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fill,minmax(320px,1fr));
     gap: 40px;
 }
 
 .projectCard {
-    height: 200px;
+    height: 160px;
     display: grid;
     grid-template-rows: auto 1fr auto;
+    border-left: salmon 8px solid;
+
+
+}
+
+.widgetBox {
+    border-radius: 8px;
+    padding: 24px;
+    background-color: white;
+    box-shadow: 4px 4px 4px rgb(173 173 173 / 50%); 
+}
+
+.projectCard h3 {
+    font-size: 1rem;
+    margin: 0px;
+    margin-bottom: 8px;
+}
+
+.projectCard p {
+    margin: 0;
+}
+
+.buttonGroup {
+    justify-self: end;
+}
+
+.projectCard button {
+    border: none;
+    background-color: white;
 }
 
 .trendingProfileCard {

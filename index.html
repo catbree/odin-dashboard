@@ -95,27 +95,28 @@
         <div class="pageContent">
             <div class="topNav">
                 <div class="topNavFirstRow">
-                    <input type="search"/>
-                    <button><svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.25 19.25L15.5 15.5M4.75 11C4.75 7.54822 7.54822 4.75 11 4.75C14.4518 4.75 17.25 7.54822 17.25 11C17.25 14.4518 14.4518 17.25 11 17.25C7.54822 17.25 4.75 14.4518 4.75 11Z"></path>
+                      </svg>                      
+                    <input type="search" id="search"/>
+                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 12V10C17.25 7.1005 14.8995 4.75 12 4.75C9.10051 4.75 6.75 7.10051 6.75 10V12L4.75 16.25H19.25L17.25 12Z"/>
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 16.75C9 16.75 9 19.25 12 19.25C15 19.25 15 16.75 15 16.75"/>
-                      </svg>
-                      </button>
-                    <img src="https://source.unsplash.com/random/24x24">
-                    Morgan Oakley
+                    </svg>
+                    <div class="avatar avatarSmall"></div>
+                    <p>Morgan Oakley</p>
                 </div>
                 <div class="topNavSecondRow">
                     <div class="welcomeMessage">
-                        <img src="https://source.unsplash.com/random/40x40">
-                        <div>
-                            <p>Hi there</p>
+                        <div class="avatarMedium"></div>
+                        <div class="welcomeText">
+                            <p>Hi there,</p>
                             <p>Morgan Oakley (@morgan)</p>
-                        </div>
-                        
+                        </div> 
                     </div>
-                    <button>New</button>
-                    <button>Upload</button>
-                    <button>Share</button>
+                    <button class="primaryButton">New</button>
+                    <button class="primaryButton">Upload</button>
+                    <button class="primaryButton">Share</button>
                 </div>
             </div>
 
@@ -124,7 +125,7 @@
                     <div class="projectWidget">
                         <h2>My Projects</h2>
                         <div class="projectGrid">
-                            <div class="projectCard">
+                            <div class="projectCard widgetBox">
                                 <h3>Super cool project</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                                 <div class="buttonGroup">
@@ -143,7 +144,7 @@
                                       </button>
                                 </div>
                             </div>
-                            <div class="projectCard">
+                            <div class="projectCard widgetBox">
                                 <h3>Less cool project</h3>
                                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
                                 <div class="buttonGroup">
@@ -162,7 +163,7 @@
                                       </button>
                                 </div>
                             </div>
-                            <div class="projectCard">
+                            <div class="projectCard widgetBox">
                                 <h3>Impossible App</h3>
                                 <p>But I must explain to you how all this mistaken idea of denouncing pleasure</p>
                                 <div class="buttonGroup">
@@ -181,7 +182,7 @@
                                       </button>
                                 </div>
                             </div>
-                            <div class="projectCard">
+                            <div class="projectCard widgetBox">
                                 <h3>EZPZ App</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                                 <div class="buttonGroup">
@@ -200,7 +201,7 @@
                                       </button>
                                 </div>
                             </div>
-                            <div class="projectCard">
+                            <div class="projectCard widgetBox">
                                 <h3>Ad Blocker App</h3>
                                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti</p>
                                 <div class="buttonGroup">
@@ -219,7 +220,7 @@
                                       </button>
                                 </div>
                             </div>
-                            <div class="projectCard">
+                            <div class="projectCard widgetBox">
                                 <h3>Expense App</h3>
                                 <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized</p>
                                 <div class="buttonGroup">
@@ -244,6 +245,7 @@
                 <div class="widgetsRight">
                     <div class="announcementWidget">
                         <h2>Announcements</h2>
+                        <div class="widgetBox">
                             <div class="announcementItem">
                                 <h3>Site Maintenance</h3>
                                 <p>This is a announcement that I am feeling abit tired and maybe even abit peckish and will need some food very soon...</p>
@@ -251,40 +253,43 @@
                             <div class="announcementItem">
                                 <h3>Community Share Day</h3>
                                 <p>Have you checked your social media today yet? Actually I think you'd scratch that...</p>
-                            </div>
-                            <div class="announcementItem">
-                                <h3>Updated Privacy Policy</h3>
+                            </div>                                <div class="announcementItem">
+                                  <h3>Updated Privacy Policy</h3>
                                 <p>Bro have you checked if you are aligned with our new privacy policy or what...</p>
                             </div>
+                        </div>
+                            
                     </div>
                     <div class="trendingWidget">
                         <h2>Trending</h2>
-                        <div class="trendingProfileCard">
-                            <img src="https://source.unsplash.com/random/24x24">
-                            <div class="trendingProfileName">
-                                <p>@tegan</p>
-                                <p>World Peace Builder</p>
+                        <div class="widgetBox">
+                            <div class="trendingProfileCard">
+                                <img src="https://source.unsplash.com/random/24x24">
+                                <div class="trendingProfileName">
+                                    <p>@tegan</p>
+                                    <p>World Peace Builder</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="trendingProfileCard">
-                            <img src="https://source.unsplash.com/random/24x24">
-                            <div class="trendingProfileName">
-                                <p>@morgan</p>
-                                <p>Super Cool Project</p>
+                            <div class="trendingProfileCard">
+                                <img src="https://source.unsplash.com/random/24x24">
+                                <div class="trendingProfileName">
+                                    <p>@morgan</p>
+                                    <p>Super Cool Project</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="trendingProfileCard">
-                            <img src="https://source.unsplash.com/random/24x24">
-                            <div class="trendingProfileName">
-                                <p>@kendall</p>
-                                <p>Life Changing App</p>
+                            <div class="trendingProfileCard">
+                                <img src="https://source.unsplash.com/random/24x24">
+                                <div class="trendingProfileName">
+                                    <p>@kendall</p>
+                                    <p>Life Changing App</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="trendingProfileCard">
-                            <img src="https://source.unsplash.com/random/24x24">
-                            <div class="trendingProfileName">
-                                <p>@alex</p>
-                                <p>No Traffic Maker</p>
+                            <div class="trendingProfileCard">
+                                <img src="https://source.unsplash.com/random/24x24">
+                                <div class="trendingProfileName">
+                                    <p>@alex</p>
+                                    <p>No Traffic Maker</p>
+                                </div>
                             </div>
                         </div>
                     </div>
